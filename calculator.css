@@ -1,0 +1,9 @@
+body {
+  background-color: #333f3c;
+}
+
+.mainContainer {
+  border: solid orange 5px;
+  height: 10vh;
+  width: 7vw;
+}
