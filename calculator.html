@@ -12,35 +12,44 @@
   <body>
 
     <!-- // The Calculator main Container  -->
-    <div class="mainContainer">
+    <div class="mainContainer"> Caculator
 
       <!-- The Calcualor Results Screen -->
-      <div class="calScreen"></div>
+      <div class="calScreen">
+        
+        <!-- Calculator Results Digit -->
+         <div class="calResultDigits"></div>
+      </div>
 
       <!-- The Calculator Num Pad - The Buttons -->
-      <div class="calNumPad">
+      <div class="calNumPadContainer">
 
         <!-- Numbers and operators buttons -->
-         <div class="calNumPad1 acOP">AC</div>
-         <div class="calNumPad2 plusMinus">+/-</div>
-         <div class="calNumPad3 percentage">%</div>
-         <div class="calNumPad4 division">÷</div>
-         <div class="calNumPad5 num7">7</div>
-         <div class="calNumPad6 num8">8</div>
-         <div class="calNumPad7 num9">9</div>
-         <div class="calNumPad8 multiply">X</div>
-         <div class="calNumPad9 num4">4</div>
-         <div class="calNumPad10 num5">5</div>
-         <div class="calNumPad11 num6">6</div>
-         <div class="calNumPad12 minus">-</div>
-         <div class="calNumPad13 num1">1</div>
-         <div class="calNumPad14 num2">2</div>
-         <div class="calNumPad15 num3">3</div>
-         <div class="calNumPad16 plus">+</div>
-         <div class="calNumPad17 scintific">SC</div>
-         <div class="calNumPad18 num0">0</div>
-         <div class="calNumPad19 dot">.</div>
-         <div class="calNumPad20 equal">=</div>
+         <button class="calNumPad key1 acOP" onclick="screen.innerText = ''; calculation=''">AC</button>
+         <button class="calNumPad key2 plusMinus" onclick="updateCalculation('+/-')">+/-</button>
+         <button class="calNumPad key3 percentage" onclick="updateCalculation('%')">%</button>
+         <button class="calNumPad key4 division" onclick="updateCalculation('/')">÷</button>
+
+         <button class="calNumPad key5 num7" onclick="updateCalculation('7')">7</button>
+         <button class="calNumPad key6 num8" onclick="updateCalculation('8')">8</button>
+         <button class="calNumPad key7 num9" onclick="updateCalculation('9')">9</button>
+         <button class="calNumPad key8 multiply" onclick="updateCalculation('*')">x</button>
+
+         <button class="calNumPad key9 num4" onclick="updateCalculation('4')">4</button>
+         <button class="calNumPad key10 num5" onclick="updateCalculation('5')">5</button>
+         <button class="calNumPad key11 num6" onclick="updateCalculation('6')">6</button>
+         <button class="calNumPad key12 minus" onclick="updateCalculation('-')">-</button>
+
+         <button class="calNumPad key13 num1" onclick="updateCalculation('1')">1</button>
+         <button class="calNumPad key14 num2" onclick="updateCalculation('2')">2</button>
+         <button class="calNumPad key15 num3" onclick="updateCalculation('3')">3</button>
+         <button class="calNumPad key16 plus" onclick="updateCalculation('+')">+</button>
+
+         <button class="calNumPad key17 scintific" onclick="updateCalculation('SC')">SC</button>
+         <button class="calNumPad key18 num0" onclick="updateCalculation('0')">0</button>
+         <button class="calNumPad key19 dot" onclick="updateCalculation('.')">.</button>
+         <button class="calNumPad key120 equal" onclick="calculation = eval(calculation); resultsOutPut(calculation); console.log(calculation)">=</button>
+         <!-- eval is a JavaScript Function to evaluate the string  -->
       </div>
     </div>
     

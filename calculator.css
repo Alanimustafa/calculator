@@ -1,9 +1,79 @@
 body {
   background-color: #333f3c;
+  justify-content: center;
+  align-content: center;
 }
 
 .mainContainer {
   border: solid orange 5px;
-  height: 10vh;
-  width: 7vw;
+  width: 25vw;
+  height: auto;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 30px;
+  color: white;
+  font-size: 35px;;
 }
+
+.calScreen {
+  border: solid white 2px;
+  background-color: #1d201f;
+  border-radius: 25px;;
+  width: 95%;
+  height: 10vh;
+  justify-self: center;
+  flex-wrap: wrap;
+  margin-top: 105px;
+  align-content:flex-end;
+  justify-content:right;
+}
+
+.calResultDigits {
+  width: auto;
+  color: white;
+  font-size: 80px;
+  font-weight: bold;
+  justify-self: right;
+  margin-right: 1vw;
+}
+
+.calNumPadContainer {
+  
+  width: 95%;
+  height: 70%;
+  justify-self: center;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.calNumPad {
+  width: 150px;;
+  height: 130px;
+  border: solid rgb(150, 140, 140) 1px;
+  margin: 5px;
+  color: white;
+  font-size: 70px;
+  align-content: space-around;
+  text-align: center;
+  border-radius: 50px;
+  background-color: #414141;
+  cursor: pointer;
+}
+
+.acOP, .plusMinus, .percentage {
+  background-color: gray;
+}
+
+.division,
+.multiply,
+.minus,
+.plus,
+.equal {
+  background-color: orange;
+}
+
